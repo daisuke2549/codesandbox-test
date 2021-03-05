@@ -9,8 +9,32 @@ console.log(message2);
 
 /* アロー関数 */
 
-function func1(str) {
+// function func1(str) {
+//   return str;
+// }
+
+const func1 = function (str) {
   return str;
-}
+};
 
 console.log(func1("func1です"));
+
+const func2 = (str) => str;
+
+console.log(func2("func2です"));
+
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+
+console.log(func3(50, 20));
+
+/* 分割代入 */
+
+const human = {
+  name: "suzuki",
+  age: 29
+};
+
+const message = `名前は${human.name}です。年齢は${human.age}です`;
+console.log(message);
